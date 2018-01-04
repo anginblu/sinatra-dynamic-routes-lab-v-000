@@ -19,7 +19,9 @@ class App < Sinatra::Base
     @number = params[:number].to_i
     @phrase_array = []
     @phrase_array << params[:phrase].to_s
-    @phrase_array.each {|word| "word"}
+    until @number == @count
+      "#{@phrase}"
+      count += 1
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
