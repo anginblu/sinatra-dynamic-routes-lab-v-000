@@ -1,5 +1,4 @@
 class Item
-  @@list = []
   attr_reader :id
   attr_accessor :name
 
@@ -7,5 +6,5 @@ class Item
     @name = name
     @id = @@list.length + 1
   end
-…
+
 end  
