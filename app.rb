@@ -3,7 +3,7 @@ require_relative 'config/environment'
 class App < Sinatra::Base
   # Write your code here!
   get '/reversename/:name' do
-
+    @name = params:name
   end
 
   get '/square/:number' do
@@ -21,5 +21,5 @@ class App < Sinatra::Base
   get '/:operation/:number1/:number2' do
 
   end
-  
+
 end
